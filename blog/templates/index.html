@@ -35,7 +35,7 @@
                 <div class="card-body">
                     <h2 class="card-title">{{ post.title }}</h2>
                     <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
-                    <p class="card-text"> {% autoescape off %}{{ post.content | safe | linebreaks | truncatewords:50 }}{% endautoescape %}</p>
+                    <p class="card-text"> {% autoescape off %}{{ post.content | safe | linebreaks | truncatewords:40 }}{% endautoescape %}</p>
                     <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
                 </div>
             </div>
