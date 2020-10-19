@@ -1,24 +1,20 @@
+{% block sidebar %}
+
 <style>
         .card{
             box-shadow: 0 16px 48px #E3E7EB;
         }
+       
 </style>
+
 <!-- Sidebar Widgets Column -->
 <div class="col-md-4 float-right ">
-    <div class="card my-3">
-        <h5 class="card-header">About</h5>
-        <div class="card-body">
-            <p class="card-text">This awesome blog is made on the top of my favourite full stack framework "Django"; follow up the tutorial to learn how I made it!</p>
-            <a href="https://djangocentral.com/building-a-blog-application-with-django"
-               class="btn btn-success">Know more</a>
-        </div>
-    </div>
-    <div class="card my-4">
-        <h5 class="card-header">Readings</h5>
-        <div class="card-body">
-            <p class="card-text">Food for the mind.</p>
-            <a href="/book-review-beyond-good-and-evil"
-               class="btn btn-success">Let's learn</a>
-        </div>
+<div class="card my-3">
+        <h5 class="card-header">Quote of the Day</h5>
+    <div class="card-body">
+        <p class="card-text">"Early to bed and early to rise, makes a man healthy, wealthy, and wise."</p>
     </div>
 </div>
+</div>
+
+{% endblock sidebar %}
